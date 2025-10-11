@@ -19,36 +19,263 @@
       <h1>Sound Constellation - Final Presentation & Reflection</h1>
     </header>
     <nav>
-      <a href="" target="_blank"> Final UI </a>
-      <a href="" target="_blank"> UI Prototype </a>
-      <a href="" target="_blank"> UI Code Repository </a>
+      <a href="https://soundconstellation-final.netlify.app" target="_blank">
+        Final UI
+      </a>
+      <a href="https://prototypeui-v1.netlify.app" target="_blank">
+        UI Prototype
+      </a>
+      <a href="https://github.com/yangluo1234/assignment-UI" target="_blank">
+        UI Code Repository
+      </a>
     </nav>
     <main class="container">
       <section class="card">
-        <h2>Reflection</h2>
+        <h2>Overview</h2>
+        <p>
+          Sound Constellation is an interactive audio UI where users connect
+          stars to build a melody and then replay the path as a constellation
+          line. The concept blends a night sky metaphor with a playable
+          synthesiser. The project responds to the “No text characters” creative
+          response, and the UI is built on the provided Tone.js audio system.
+        </p>
       </section>
       <section class="card">
-        <h2>Reflection</h2>
+        <h2>Guiding Values and How They Shaped The UI</h2>
+        <p>
+          Clarity means the interface communicates through shape and motion
+          instead of text. The stars act as the only main controls. The play and
+          clear buttons sit below the field and are easy to find.
+        </p>
+        <p>
+          Playfulness comes from the scattered layout and the glowing look.
+          Users can click any star, hear a tone, and draw a line that forms a
+          small melody.
+        </p>
+        <p>
+          Immersion is created by sound and light working together. Each star
+          gives a short pulse, and the notes have small natural variations. This
+          makes the night sky feel alive.
+        </p>
       </section>
 
       <section class="card">
-        <h2>Reflection</h2>
+        <h2>Feedback, Information Design, Mapping, And Learnability</h2>
+        <p>
+          The UI gives immediate feedback. Each click plays a note at once, and
+          the star flashes brighter with a short scale pop, while the canvas
+          draws a line from the last star to the new one. The background hue
+          shifts slightly when Play runs, and small timing and velocity
+          randomness make repeats feel alive. The reverb icon grows and changes
+          colour as the slider moves, so the effect feels visible as well as
+          audible. The twinkling animation signal interactivity without text,
+          which fits the no-text characters prompt. The Clear button wipes lines
+          and memory, giving a clean reset when users want to start a new
+          constellation.
+        </p>
+        <p>
+          The information design follows a clear hierarchy. The sky is the main
+          stage in the centre. The controls sit below and, the footer stays at
+          the bottom. Stars and lines live in the sky layer, while play, reset,
+          and reverb stay in the controls layer to keep things tidy. High
+          contrast guides focus, with bright stars on a dark background and
+          yellow accents on buttons. Because I follow the no-text characters
+          prompt, meaning is carried by icons, motion, and sound
+        </p>
+        <p>
+          The mapping uses a scattered night-sky layout rather than a grid. Each
+          star is a direct control, and users can click in any order. The system
+          draws a line after each click, so the visual path mirrors the musical
+          sequence. This freedom mapping feels like sketching a constellation
+          and encourages open exploration.
+        </p>
+        <p>
+          Learnability relies on familiar iconography and immediate feedback.
+          The play triangle, reset arrows, and water-drop reverb icon act as
+          quite signposts, so most users already know what they do. After one
+          click, the system confirms the choice with sound, a brief star flash,
+          and a line drawing, which teaches the interaction without
+          instructions. Because controls are few and consistent, most users
+          succeed on first use and build confidence quickly.
+        </p>
       </section>
 
       <section class="card">
-        <h2>Reflection</h2>
+        <h2>Significant Change From Prototype To Final UI</h2>
+        <p>
+          First, I replaced the 4*4 grid with a scattered night sky layout
+          because the grid looked like a tool, not a constellation. The free
+          positions let users draw any path, and the screen reads more like a
+          sky. This change also aligns better with the no text characters prompt
+          because the idea is carried by spatial composition rather than labels.
+        </p>
+        <p>
+          Second, I added a twinkle animation to each star, so the page feels
+          alive before the first click. The motion is slow and small to avoid
+          distraction. In quick tests with classmates, most people noticed the
+          stars and understood they were interactive without me telling them. A
+          few people said the twinkle could be slightly stronger on small
+          screens, so I increased the mid keyframe scale and opacity.
+        </p>
+        <p>
+          Third,I increased contrast in the controls by moving to yellow accents
+          on a deep blue black background. The goal was to improve legibility
+          and make the play and reset icons readable at a glance. I checked
+          contrast with simple eyedrop tests, and the buttons now stand out
+          while still feeling part of the night theme.
+        </p>
+        <p>
+          These changes improved immersion and clarity, but they also introduced
+          trade-offs. The scattered layout is less regular, so I had to
+          pre-place the stars with percentages to keep balance across screens.
+          If I had more time, I would add a small onboarding hint that fades
+          after the first tap, and a toggle to adjust twinkle strength on very
+          bright displays.
+        </p>
       </section>
-
       <section class="card">
-        <h2>Reflection</h2>
+        <h2>Production Timeline In 9 Weeks</h2>
+        <section>
+          <h3>Week 1</h3>
+          <p>
+            I set an early goal to fix the concept and build a small test. I
+            first tried a no text idea with geometric shapes. It worked but felt
+            flat. User actions did not feel meaningful. This helped me realise
+            that the metaphor matters as much as the sound.
+          </p>
+        </section>
+        <section>
+          <h3>Week2 - Week 3</h3>
+          <p>
+            After research, I shifted to a constellation idea. The star metaphor
+            made immediate sense. It supported free drawing and listening. I
+            kept the scope small so I could deliver a working path from click to
+            sound.
+          </p>
+          <p>
+            I built the prototype with a 4*4 grid. My goal was clarity. The grid
+            looked like a canvas so users could understand clicking and
+            connecting quickly. It worked, but the mood felt too mechanical and
+            less like a night sky. This tension between clarity and character
+            became my main design question.
+          </p>
+        </section>
+        <section>
+          <h3>Week 4 - Week 6</h3>
+          <p>
+            I rebuilt the interaction around scattered stars. Each click plays a
+            note and adds a point to a path so drawing and sound match. I kept
+            the logic simple and stable. I also reworked the visual hierarchy.
+            Stars and lines stay in the sky layer while the play, reset and
+            reverb controls sit below. I began increasing contrast so controls
+            read better on a dark background.
+          </p>
+        </section>
+        <section>
+          <h3>Week 7 - Week 8</h3>
+          <p>
+            I focused on polish and feedback. I added a gentile twinkle using
+            CSS animation and a short flash on click. These cues make the stars
+            feel alive without adding text. I also changed button styling to a
+            darker base with yellow accents to improve contrast and keep the
+            theme of night and starlight. Much of this time was research and
+            small trials, since several techniques were outside class material.
+          </p>
+        </section>
+        <section>
+          <h3>Final week</h3>
+          <p>
+            I tested my project again and again, cleaned up small
+            inconsistencies and added code comments so the mapping and drawing
+            logic are clear.
+          </p>
+          <p>
+            Looking back, most time went to concept and interaction decisions
+            rather than pure coding. The grid prototype taught me that clarity
+            can reduce character. The final scattered sky keeps learnability but
+            adds atmosphere and freedom. I learned to fix one core flow early,
+            ship it, then improve it with focused changes based on feedback and
+            testing.
+          </p>
+        </section>
       </section>
-
       <section class="card">
-        <h2>Reflection</h2>
+        <h2>The Aspect I’m Most Proud Of</h2>
+        <p>
+          I am most proud of the idea and how it is presented in the final UI.
+          At the start, I only had a simple plan to use different shapes to
+          trigger different sounds. It was very basic and did not feel
+          meaningful. Through research and brainstorming, I found a clearer
+          concept. Turning the interface into a night sky where users draw their
+          own constellation made the interaction feel open and poetic, not just
+          functional.
+        </p>
+        <p>
+          I am also proud that I could realise this idea with self learning. I
+          taught myself the parts I was missing, like using CSS animation for a
+          gentle twinkle and a short flash on press, and mapping user taps to
+          lines so the drawn path matches the melody. I learned to keep the
+          interface mostly text-free and rely on icons, motion and sound to
+          guide the user. This balance of concept and implementation shows
+          growth in both design thinking and technical skills.
+        </p>
+        <p>
+          Finally, I value how the UI feels when you use it. The scattered stars
+          invite exploration, the audio has small randomness for a natural
+          touch, and the controls are clear at a glance. This combination came
+          from feedback, testing and iteration, and it reflects the kind of work
+          I want to keep doing.
+        </p>
       </section>
-
       <section class="card">
-        <h2>Reflection</h2>
+        <h2>The Aspect I'm Most Challenging</h2>
+        <p>
+          The most challenging part was the audio side. I started with almost no
+          music theory and I did not know what delay, filter, reverb or even
+          notes really meant. Even reading explanations in my first language
+          felt confusing because these terms were new to me and I was not very
+          interested in music before. For this project I had to push myself to
+          learn the basics. I studied simple scales and note names, and I read
+          how common effects shape the sound.
+        </p>
+        <p>
+          This learning changed how I designed the UI. I kept the controls small
+          in number so users do not face the same confusion I had. I chose one
+          clear slider for reverb because it gives an immediate sense of space,
+          and I left delay and filter as internal settings rather than complex
+          panels. I also added tiny randomness to note timing and velocity to
+          make the sequence feel more natural. I tested by ear, compared
+          outcomes, and adjusted until the feedback sounded right.
+        </p>
+        <p>
+          In the end, I learned the fundamentals that I actually needed. I can
+          now describe what reverb does, how a filter changes brightness, and
+          how note choice affects mood. This was harder for me than coding or
+          CSS, but it made the final interface more thoughtful and easier to
+          use.
+        </p>
+      </section>
+      <section class="card">
+        <h2>Next steps</h2>
+        <p>
+          My next step is to make the constellation feel richer without adding
+          heavy UI. I plan to offer two or three preset skies that load
+          different note sets so people can explore different moods. I also want
+          to add a save and share option so a user can copy a link and replay
+          their drawing.
+        </p>
+        <p>
+          I will continue to improve feedback. The twinkle will have small
+          variation in speed and brightness, so the sky feels more alive. The
+          play path will glow while it is read so timing is easy to follow.
+        </p>
+        <p>
+          On the technical side I will refine performance on mobile. I may also
+          run a short user test with my friends to measure learnability. I will
+          ask them to draw a shape, play it, clear it, and explain what they
+          think the slider does. Their feedback will guide the next round of
+          polish.
+        </p>
       </section>
     </main>
     <footer>
